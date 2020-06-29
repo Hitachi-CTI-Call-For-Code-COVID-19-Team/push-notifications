@@ -10,7 +10,7 @@
 - Install Xcode
 ### IBM Cloud Portal : Building Mobile Apps from the Swift Starter Kit in the IBM Cloud app development dashboard.
 
-<img src="img/image-20200629230715320.png" alt="image-20200629230715320" width="50%" hight="50%"/>
+<img src="img/image-20200629230715320.png" alt="image-20200629230715320" width="75%" hight="75%"/>
 
 <img src="img/image-20200629231004317.png" alt="image-20200629231004317" style="zoom:50%;" />
 
@@ -50,7 +50,7 @@
     - Leave the "CA's email address" field blank.
     - Select 'Save to Disk' and click 'Continue'.
 
-    <img src="img/image-20200629211355873.png" alt="image-20200629211355873" style="zoom:30%;" />
+    <img src="img/image-20200629211355873.png" alt="image-20200629211355873" width="50%" hight="50%" />
 
 - Reference
 
@@ -60,7 +60,7 @@
 
 <img src="img/image-20200629212236812.png" alt="image-20200629212236812" style="zoom:50%;" />
 
-<img src="img/image-20200629212302767.png" alt="image-20200629212302767" style="zoom:30%;" />
+<img src="img/image-20200629212302767.png" alt="image-20200629212302767" width="30%" hight="30%/>
 
 - Upload the CSR file
 
