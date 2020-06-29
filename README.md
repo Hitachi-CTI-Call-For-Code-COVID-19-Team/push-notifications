@@ -10,7 +10,7 @@
 - Install Xcode
 ### IBM Cloud Portal : Building Mobile Apps from the Swift Starter Kit in the IBM Cloud app development dashboard.
 
-<img src="img/image-20200629230715320.png" alt="image-20200629230715320" style="zoom:30%;" />
+<img src="img/image-20200629230715320.png" alt="image-20200629230715320" style="width: 50%; hight:50%; border: 1px solid black;" />
 
 <img src="img/image-20200629231004317.png" alt="image-20200629231004317" style="zoom:50%;" />
 
