@@ -1,103 +1,53 @@
-## Setup
+# Push Notifications
 
-### Reference
+## DEMO
 
-- Set up with the following URL as a reference.
-    https://cloud.ibm.com/docs/solution-tutorials?topic=solution-tutorials-ios-mobile-push-analytics
+## Features
+- Send push notifications with the mobile push notification service, APNs. By this push notifications, it can be exchange the information in real time.
 
-### Advance Preparation
-- Sign up for ADEP(Apple Developer Enterprise Program)
-- Install Xcode
-### IBM Cloud Portal : Building Mobile Apps from the Swift Starter Kit in the IBM Cloud app development dashboard.
+    - Notify event message to the indivisual by sending the push notification from backend service, called Risk Notifier, to the mobile phone app in order to control the indicator device of the shop officer.
+    - Broadcast the message
 
-<img src="img/image-20200629230715320.png" alt="image-20200629230715320" width="75%" hight="75%"/>
+- Mobile can receive the push notifications without running the mobile app, as log as it's installed.
 
-<img src="img/image-20200629231004317.png" alt="image-20200629231004317" style="zoom:50%;" />
+## Requirements
+### Development Environment
+- IBM Cloud
+    - Push Notifications
+    - Cloud Functions
+    - Cloudant
+- Xcode v11
+- Apple Enterprise Developer Program
 
-- Download the code. Setting up the client SDK
 
-    ```
-    $ sudo gem install cocoapods --pre
-    $ unzip MobileAppwithPushNotificationsC4CCOVID19-Swift.zip
-    $ cd MobileAppwithPushNotificationsC4CCOVID19-Swift
-    $ pod install
-    ```
+### Production Environment
+- Mobile Phone
+    - iOS only (Android is out of scope)
+    - Install the mobile app
+    - register the mobile phone device ID to the APNs.
 
-### Apple Developer Portal:  Get APNs credentials and configure the Push Notifications service instance.
 
-- Register App ID　
+## Installation
+- [How to setup and configure Push Notificatin related services](./docs/Installations.md)
+- [How to create the action of IBM Cloud Functions](./)
+- aa
 
-    　<img src="img/image-20200629231113624.png" alt="image-20200629231113624" style="zoom:50%;" />
 
-    - If you are in the Developer role, the registration button for the App ID doesn't appear. The Account Holder role is required.
+## Usage
+- The action of IBM Cloud Functions
+    - Send the push notification message to the indivisual mobile phone device by specifying the device ID.
+    - Send the push notification message to the 
 
-    <img src="img/image-20200629231240015.png" alt="image-20200629231240015" style="zoom:50%;" />
 
-    - Specify Push Notifications for Capability.
+## Author
+ - Kentaro Watanabe
 
-        <img src="img/image-20200629205721913.png" alt="image-20200629205721913" style="zoom:50%;" />
+ 
+## Licence
+- MIT License
 
-    <img src="img/image-20200629205938015.png" alt="image-20200629205938015" style="zoom:50%;" />
 
-### Developper Client PC: Creating APNs SSL Certificates (one for development and one for distribution)
 
-- Create Certificate Signing Request (CSR) in case your client is MacOSX
 
-    - Launch Keychain Access in /Applications/Utilities.
-    - Select Key Chain Access > Certificate Assistant > Request Certificate from Certificate Authority.
-    - In the Certificate Assistant dialog, enter your email address in the User email address field.
-    - Enter the name of the key in the "Common Name" field (e.g. Gita Kumar Dev Key).
-    - Leave the "CA's email address" field blank.
-    - Select 'Save to Disk' and click 'Continue'.
 
-    <img src="img/image-20200629211355873.png" alt="image-20200629211355873" width="50%" hight="50%" />
-
-- Reference
-
-    - https://help.apple.com/developer-account/#/devbfa00fef7
-
-### Apple Developer Portal: Create a client SSL certificate
-
-<img src="img/image-20200629212236812.png" alt="image-20200629212236812" style="zoom:50%;" />
-
-<img src="img/image-20200629212302767.png" alt="image-20200629212302767" width="30%" hight="30%/>
-
-- Upload the CSR file
-
-    <img src="img/image-20200629212409336.png" alt="image-20200629212409336" style="zoom:50%;" />
-
-- Download the client certificate (.cer file)
-
-    <img src="img/image-20200629212516077.png" alt="image-20200629212516077" style="zoom:50%;" />
-
-### Developer Client PC:  Create the Personal Information Exchange Format file.
-
-- Import the client certificate (.cer file) and export in Personal Information Exchange Format (.p12 format) by Keychain Access.app on MacOSX
-- Remember the password of .p12 format file.
-
-<img src="img/image-20200629213047182.png" alt="image-20200629213047182" style="zoom:50%;" />
-
-<img src="img/image-20200629213700522.png" alt="image-20200629213700522" style="zoom:50%;" />
-
-<img src="img/image-20200629213736989.png" alt="image-20200629213736989" style="zoom:50%;" />
-
-<img src="img/image-20200629213833878.png" alt="image-20200629213833878" style="zoom:50%;" />
-
-<img src="img/image-20200629213905362.png" alt="image-20200629213905362" style="zoom:50%;" />
-
-<img src="img/image-20200629213948905.png" alt="image-20200629213948905" style="zoom:50%;" />
-
-<img src="img/image-20200629214020206.png" alt="image-20200629214020206" style="zoom:50%;" />
-
-### IBM Cloud Portal: Configuration of Push Notifications Service Instance
-
-<img src="img/image-20200629220934505.png" alt="image-20200629220934505" style="zoom:50%;" />
-
-<img src="img/image-20200629221039444.png" alt="image-20200629221039444" style="zoom:50%;" />
-
-<img src="img/image-20200629221122178.png" alt="image-20200629221122178" style="zoom:50%;" />
-
-<img src="img/image-20200629230509353.png" alt="image-20200629230509353" style="zoom:50%;" />
-
-<img src="img/image-20200629230324447.png" alt="image-20200629230324447" style="zoom:50%;" />
 
