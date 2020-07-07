@@ -20,6 +20,7 @@
 
 - The mobile app can receive push notifications when running in the background as well as when running in the foreground.
 
+- Communications between back-end services and APNs, and between APNs and mobile phones are encrypted by TLS.
 ## Requirements
 ### Development Environment
 - IBM Cloud
