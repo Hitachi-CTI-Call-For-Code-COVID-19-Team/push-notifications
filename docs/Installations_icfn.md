@@ -3,7 +3,7 @@
 
 - Setup to install the IBM Push Notifications package into the Cloudfunctions namespace.
 
-```
+```bash
 $ ibmcloud fn property set --namespace risk-notifier
 onk: whisk namespace set to risk-notifier
 $ cd package-push-notifications/runtimes/nodejs/
