@@ -51,7 +51,7 @@
     | messageText|The body text of the push notifications|string|mandatry|
     | apnstitle |The title text of the push notifications|string|optional|
     | targetDeviceIds |The list of device ID of target mobile|string|optional|
-    | apnsType | ['DEFAULT', 'MIXED', 'SILENT']|optional|
+    | apnsType | ['DEFAULT', 'MIXED', 'SILENT']|string|optional|
 
 ### Use Case
 - [CASE1](./docs/usecase1.md): Send the push notification message to the indivisual mobile phone by specifying the device ID.
