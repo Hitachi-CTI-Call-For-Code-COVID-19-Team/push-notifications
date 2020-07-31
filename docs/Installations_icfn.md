@@ -4,8 +4,9 @@
 - Setup to install the IBM Push Notifications package into the Cloudfunctions namespace.
 
 ```bash
-$ ibmcloud fn property set --namespace risk-notifier
-onk: whisk namespace set to risk-notifier
+$ git clone https://github.com/ibm-functions/package-push-notifications.git
+$ ibmcloud fn property set --namespace risk-calculation-notification
+ok: whisk namespace set to risk-notifier
 $ cd package-push-notifications/runtimes/nodejs/
 $ ibmcloud fn  deploy -m manifest.yaml
 Success: Deployment completed successfully.
@@ -13,7 +14,7 @@ $ ibmcloud fn package list packages
 /96e4911c-15bf-4779-aaaf-cf257c10caf2/push-notifications               private
 $ ibmcloud fn service bind imfpush push-notifications
 Credentials 'f61d5d98-f1e6-4feb-90ff-81c0620b6171' from 'imfpush' service instance 'mobile-app-with-push-push-1590413402291' bound to 'push-notifications'.
-$ ibmcloud fn package get /96e4911c-15bf-4779-aaaf-cf257c10caf2/push-notifications parameters
+$ ibmcloud fn package get push-notifications parameters
 ok: got package push-notifications, displaying field parameters
 [
     {
