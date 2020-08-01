@@ -40,7 +40,7 @@
 
 ## Installations and Configurations
 - [STEP1](./docs/Installations.md): The step to setup and configure Push Notificatin related services
-- STEP2: The step to create the action of IBM Cloud Functions, whitch can send the push notifications. See the Push notifications repository for specific instructions. 
+- STEP2: The step to create the action of IBM Cloud Functions, whitch can send the push notifications. See the risk-notifier repository for specific instructions. 
 
 ## Usage
 ### Interface
@@ -57,13 +57,9 @@
 - [CASE1](./docs/usecase1.md): Send the push notification message to the indivisual mobile phone by specifying the device ID.
 - [CASE2](./docs/usecase2.md): Send the push notification messages to all registered mobile phone devices.
 
-
-## Author
- - Kentaro Watanabe
-
  
 ## Licence
-- Apach2.0 License
+- see [LISENCE](./LICENSE)
 
 
 
