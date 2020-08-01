@@ -39,8 +39,8 @@
 
 
 ## Installations and Configurations
-- [STEP1](./docs/Installations.md): How to setup and configure Push Notificatin related services
-- [STEP2](./docs/Installations_icfn.md): How to create the action of IBM Cloud Functions, whitch can send the push notifications
+- [STEP1](./docs/Installations.md): The step to setup and configure Push Notificatin related services
+- STEP2: The step to create the action of IBM Cloud Functions, whitch can send the push notifications. See the Push notifications repository for specific instructions. 
 
 ## Usage
 ### Interface
